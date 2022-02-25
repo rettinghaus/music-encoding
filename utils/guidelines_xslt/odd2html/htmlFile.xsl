@@ -248,7 +248,7 @@
                             </div>
                         </div>
                         
-                        <script type="text/javascript">
+                        <script>
                             const tabbedFacets = document.querySelectorAll('.facet ul.tab');
                             
                             const tabClick = function(e) {
