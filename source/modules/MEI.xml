@@ -3272,7 +3272,7 @@
     <desc xml:lang="en">Scale degree values.</desc>
     <content>
       <rng:data type="token">
-        <rng:param name="pattern">(\^|v)?[1-7](\+|\-)?</rng:param>
+        <rng:param name="pattern">(\^|v)?[1-7](\+\+?|--?)?</rng:param>
       </rng:data>
     </content>
   </macroSpec>
