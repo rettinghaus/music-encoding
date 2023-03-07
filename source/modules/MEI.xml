@@ -3572,9 +3572,12 @@
     </content>
   </macroSpec>
   <macroSpec ident="data.STRINGNUMBER" module="MEI" type="dt">
-    <desc xml:lang="en">In string tablature, the number of the string to be played, <abbr>i.e.</abbr>, [1-9]+.</desc>
+    <desc xml:lang="en">In string tablature, the number of the string to be played, <abbr>i.e.</abbr>, 6.</desc>
     <content>
-      <rng:data type="positiveInteger"/>
+        <rng:data type="positiveInteger">
+          <rng:param name="minInclusive">1</rng:param>
+          <rng:param name="maxInclusive">21</rng:param>
+        </rng:data>
     </content>
   </macroSpec>
   <macroSpec ident="data.TEMPERAMENT" module="MEI" type="dt">
