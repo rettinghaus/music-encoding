@@ -1854,7 +1854,7 @@
         <desc xml:lang="en">Specifies a point where the relevant content begins. A numerical value must be less
           and a time value must be earlier than that given by the end attribute.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
       </attDef>
       <attDef ident="end" usage="opt">
@@ -1862,7 +1862,7 @@
           content is assumed to be the end point. A numerical value must be greater and a time value
           must be later than that given by the begin attribute.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
       </attDef>
       <attDef ident="betype" usage="opt">
@@ -2106,7 +2106,7 @@
         <desc xml:lang="en">Used to specify further information about the entity referenced by this name, for
           example, the occupation of a person or the status of a place.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
         <remarks xml:lang="en">
           <p>When applicable, values from the <abbr>MARC</abbr> relator term list (<ref
@@ -5120,7 +5120,7 @@
       <attDef ident="role" usage="rec">
         <desc xml:lang="en">Used to specify the contributor’s function.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
         <remarks xml:lang="en">
           <p>When applicable, values from the <abbr>MARC</abbr> relator term list (<ref

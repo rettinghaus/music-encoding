@@ -780,13 +780,13 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
-                        <xsl:when test="$current.att/tei:datatype[rng:text]">
+                        <xsl:when test="$current.att/tei:datatype[tei:textNode]">
                             <xsl:variable name="dt" select="$current.att/tei:datatype" as="node()"/>
                             <xsl:choose>
-                                <xsl:when test="count($dt/child::*) = 1 and $dt/rng:text and $dt/@maxOccurs = '1'">
+                                <xsl:when test="count($dt/child::*) = 1 and $dt/tei:textNode and $dt/@maxOccurs = '1'">
                                     Value is plain text.
                                 </xsl:when>
-                                <xsl:when test="count($dt/child::*) = 1 and $dt/rng:text and not($dt/@maxOccurs)">
+                                <xsl:when test="count($dt/child::*) = 1 and $dt/tei:textNode and not($dt/@maxOccurs)">
                                     Value is plain text.
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -1247,7 +1247,7 @@
         <xsl:variable name="children" select="$direct.children | $class.children | $macro.children" as="node()*"/>
         <xsl:variable name="allows.anyXML" select="exists($object/tei:content/rng:element[rng:anyName and rng:zeroOrMore/rng:attribute/rng:anyName and rng:zeroOrMore//rng:text and rng:zeroOrMore//rng:ref[@name = $object/@ident]])" as="xs:boolean"/>
         <xsl:variable name="allows.text" as="xs:boolean">
-            <xsl:variable name="regular.text" select="xs:boolean(not($allows.anyXML) and exists($object/tei:content//rng:text))" as="xs:boolean"/>
+            <xsl:variable name="regular.text" select="xs:boolean(not($allows.anyXML) and exists($object/tei:content//rng:text|$object/tei:content//tei:textNode))" as="xs:boolean"/>
             <xsl:variable name="macro.text" select="some $macroSpec in (for $name in $object//tei:content//rng:ref[starts-with(@name,'macro.')]/@name return ($macro.groups/self::tei:macroSpec[@ident = $name])) satisfies exists($macroSpec//tei:content//rng:text)" as="xs:boolean"/>
             <xsl:value-of select="$regular.text or $macro.text"/>
         </xsl:variable>
@@ -1368,7 +1368,7 @@
         <xsl:variable name="ident" select="if($is.element) then('direct children') else($object/@ident)" as="xs:string"/>
         <xsl:variable name="desc" select="if($is.element) then('') else('(' || $object/@module || ') ' || normalize-space(string-join($object/tei:desc/text(),' ')))" as="xs:string"/>
         
-        <xsl:variable name="allows.text" select="exists($object//tei:content//rng:text)" as="xs:boolean"/>
+        <xsl:variable name="allows.text" select="exists($object//tei:content//rng:text|$object//tei:content//tei:textNode)" as="xs:boolean"/>
         
         <xsl:variable name="relevant.elements" as="node()*">
             <xsl:choose>

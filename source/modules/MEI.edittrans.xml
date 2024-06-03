@@ -580,7 +580,7 @@
       <attDef ident="character" usage="opt">
         <desc xml:lang="en">Describes the character of the new hand.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
       </attDef>
       <attDef ident="new" usage="opt">
