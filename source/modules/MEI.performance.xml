@@ -204,7 +204,7 @@
       <attDef ident="absolute" usage="opt">
         <desc xml:lang="en">Provides an absolute value for the time point.</desc>
         <datatype>
-          <rng:text/>
+          <textNode />
         </datatype>
       </attDef>
       <attDef ident="interval" usage="opt">
