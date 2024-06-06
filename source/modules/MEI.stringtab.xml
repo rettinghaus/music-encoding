@@ -56,7 +56,7 @@
       <attDef ident="tab.pos" usage="opt">
         <desc xml:lang="en">Records fret position.</desc>
         <datatype>
-          <rng:data type="positiveInteger"/>
+          <dataRef name="positiveInteger"/>
         </datatype>
       </attDef>
     </attList>
@@ -95,10 +95,10 @@
           fretboard diagram. This may or may not be the same as the actual location on the fretboard
           of the instrument in performance.</desc>
         <datatype>
-          <rng:data type="positiveInteger">
-            <rng:param name="minInclusive">1</rng:param>
-            <rng:param name="maxInclusive">5</rng:param>
-          </rng:data>
+          <dataRef name="positiveInteger">
+            <dataFacet name="minInclusive" value="1"/>
+            <dataFacet name="maxInclusive" value="5"/>
+          </dataRef>
         </datatype>
       </attDef>
     </attList>

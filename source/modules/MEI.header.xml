@@ -151,7 +151,7 @@
       <attDef ident="count" usage="opt">
         <desc xml:lang="en">Indicates the number of performers.</desc>
         <datatype>
-          <rng:data type="positiveInteger"/>
+          <dataRef name="positiveInteger"/>
         </datatype>
       </attDef>
     </attList>
@@ -2473,7 +2473,7 @@
       <attDef ident="num" usage="opt">
         <desc xml:lang="en">Records the channel configuration in numeric form.</desc>
         <datatype>
-          <rng:data type="positiveInteger"/>
+          <dataRef name="positiveInteger"/>
         </datatype>
       </attDef>
     </attList>
@@ -2785,7 +2785,7 @@
       <attDef ident="num" usage="opt">
         <desc xml:lang="en">Records the track configuration in numeric form.</desc>
         <datatype>
-          <rng:data type="positiveInteger"/>
+          <dataRef name="positiveInteger"/>
         </datatype>
       </attDef>
     </attList>
