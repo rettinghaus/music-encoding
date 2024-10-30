@@ -59,7 +59,7 @@
             <change n="2" when="2019-10-26" who="#JK">
                 <desc>Revisions following the discussions on GitHub, and at the Nashville Hackathon.</desc>
             </change>
-            <change n="3" from="2023-05-24" to="2023-06-12" who="#LP">
+            <change n="3" from="2023-05-24" to="2023-06-26" who="#LP">
                 <desc>Revisions at the MEI Developers Conference, Charlottesville.</desc>
             </change>
             <change n="4" when="2023-08-23" who="#KR">
@@ -152,7 +152,6 @@
                 <classSpec type="atts" ident="att.instrDef.anl" module="MEI.analytical" mode="delete"/>
                 <classSpec type="atts" ident="att.intervalHarmonic" module="MEI.analytical" mode="delete"/>
                 <classSpec type="atts" ident="att.intervalMelodic" module="MEI.analytical" mode="delete"/>
-                <!-- <classSpec type="atts" ident="att.intervallicDesc" module="MEI.analytical" mode="delete"/> -->
                 <classSpec type="atts" ident="att.keyAccid.anl" module="MEI.analytical" mode="delete"/>
                 <classSpec type="atts" ident="att.keySig.anl" module="MEI.analytical" mode="delete"/>
                 <classSpec type="atts" ident="att.layer.anl" module="MEI.analytical" mode="delete"/>
@@ -230,7 +229,6 @@
                 <classSpec type="atts" ident="att.beaming.log" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.beamPresent" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.beamRend" module="MEI.cmn" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.beamSecondary" module="MEI.cmn" mode="delete"/>-->
                 <classSpec type="atts" ident="att.beamSpan.log" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.chord.ges.cmn" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.mNum.log" module="MEI.cmn" mode="delete"/>
@@ -239,7 +237,7 @@
                 <classSpec type="atts" ident="att.slurRend" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.space.log.cmn" module="MEI.cmn" mode="delete"/>
                 <classSpec type="atts" ident="att.tieRend" module="MEI.cmn" mode="delete"/>
-                
+
                 <classSpec type="atts" ident="att.ambitus.ges" module="MEI.gestural" mode="delete"/>
                 <classSpec type="atts" ident="att.ambNote.ges" module="MEI.gestural" mode="delete"/>
                 <classSpec type="atts" ident="att.anchoredText.ges" module="MEI.gestural" mode="delete"/>
@@ -322,10 +320,8 @@
                 <!--<classSpec type="atts" ident="att.enclosingChars" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.endings" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.evidence" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.extender" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.fermataPresent" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.filing" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.labelled" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.layer.log" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.linking" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.lyricStyle" module="MEI.shared" mode="delete"/>
@@ -354,32 +350,21 @@
                 <classSpec type="atts" ident="att.textStyle" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.tiePresent" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.tupletPresent" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.typed" module="MEI.shared" mode="delete"/>-->
-                <!--<classSpec type="atts" ident="att.typography" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.verticalGroup" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.visibility" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.visualOffset" module="MEI.shared" mode="delete"/>-->
-                <!--<classSpec type="atts" ident="att.visualOffset.ho" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.visualOffset.to" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.visualOffset.vo" module="MEI.shared" mode="delete"/>-->
-                <!--<classSpec type="atts" ident="att.visualOffset2" module="MEI.shared" mode="delete"/>-->
-                <!--<classSpec type="atts" ident="att.visualOffset2.ho" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.visualOffset2.to" module="MEI.shared" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.visualOffset2.vo" module="MEI.shared" mode="delete"/>-->
                 <classSpec type="atts" ident="att.xy" module="MEI.shared" mode="delete"/>
                 <classSpec type="atts" ident="att.xy2" module="MEI.shared" mode="delete"/>
 
-                <!--<classSpec type="atts" ident="att.accid.vis" module="MEI.visual" mode="delete"/>-->
                 <classSpec type="atts" ident="att.ambitus.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.ambNote.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.beaming.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.barLine.vis" module="MEI.visual" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.chord.vis" module="MEI.visual" mode="delete"/>-->
                 <classSpec type="atts" ident="att.chordDef.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.chordMember.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.cleffing.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.clefGrp.vis" module="MEI.visual" mode="delete"/>
-                <!--<classSpec type="atts" ident="att.fermata.vis" module="MEI.visual" mode="delete"/>-->
                 <classSpec type="atts" ident="att.fingGrp.vis" module="MEI.visual" mode="delete"/>
                 <classSpec type="atts" ident="att.fTrem.vis" module="MEI.visual" mode="delete"/>
                 <!--<classSpec type="atts" ident="att.harm.vis" module="MEI.visual" mode="delete"/>-->
