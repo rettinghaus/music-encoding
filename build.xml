@@ -65,7 +65,7 @@
         </not>
     </condition>
     <condition property="verbose" value="true" else="false">
-        <contains string="${sun.java.command}" substring="-v" />
+        <contains string="${sun.java.command}" substring="-v"/>
     </condition>
     <!-- directories -->
     <property name="dir.build" value="build"/>
@@ -123,7 +123,7 @@
     </target>
 
     <target name="echo-mei">
-        <loadfile srcfile="source/assets/images/meilogo_ascii_100.txt" property="mei" />
+        <loadfile srcfile="source/assets/images/meilogo_ascii_100.txt" property="mei"/>
         <echo message="${mei}"/>
     </target>
 
@@ -193,7 +193,7 @@
             <patternset>
                 <include name="VERSION"/>
             </patternset>
-            <contains text="${stylesheets.version}" />
+            <contains text="${stylesheets.version}"/>
         </fileset>
         <condition property="stylesheets-available">
             <and>
@@ -205,7 +205,7 @@
         <echo unless:set="stylesheets-available" message="stylesheets available: false"/>
         <!-- check if Prince is available -->
         <condition property="prince-available">
-            <available file="prince" filepath="${env.PATH}" />
+            <available file="prince" filepath="${env.PATH}"/>
         </condition>
         <echo if:set="prince-available" message="prince available: ${prince-available}"/>
         <echo unless:set="prince-available" message="prince available: false"/>
@@ -281,7 +281,7 @@
     </target>
     
     <target name="canonicalize-source" description="Creates a canonicalized version of the mei-source.xml, i.e., resolves xincludes and puts result in `build/mei-source_canonicalized_v{mei-version}`." depends="init-mei-classpath">
-        <echo unless:set="canonicalize-source.done">canonicalizing source...</echo>
+        <echo unless:set="canonicalize-source.done" message="canonicalizing source..."/>
         <java unless:set="canonicalize-source.done" classname="net.sf.saxon.Transform" classpathref="mei.classpath" failonerror="true" fork="true">
             <arg value="-s:${basedir}/source/mei-source.xml"/>
             <arg value="-xsl:${basedir}/utils/canonicalization/copy.xsl"/>
@@ -293,8 +293,8 @@
     </target>
 
     <target name="validate-source" depends="canonicalize-source" description="Validates the canonicalized source. This target will be triggered before all `build-...` targets.">
-        <echo unless:set="validate-source.done">validating source...</echo>
-        <taskdef name="schematron" classname="com.helger.schematron.ant.Schematron" classpathref="mei.classpath" loaderref="mei.classpath.loader" />
+        <echo unless:set="validate-source.done" message="validating source..."/>
+        <taskdef name="schematron" classname="com.helger.schematron.ant.Schematron" classpathref="mei.classpath" loaderref="mei.classpath.loader"/>
         <schematron unless:set="validate-source.done" schematronFile="${dir.validation}/mei-source.sch" expectSuccess="true" schematronProcessingEngine="schematron" languageCode="en" failOnError="true" failOnValidationError="true">
             <fileset dir="${dir.build}">    
                 <include name="${canonicalized.file.next}" ></include>
@@ -562,8 +562,8 @@
     <target name="compare-versions" description="Compares the canonicalized sources of the MEI dev version with the previous stable version and creates an HTML output; custom versions and output folder can be set via -Dsource, -Dold and -Doutput input params." depends="validate-source">
         <!-- set source file -->
         <property name="source.default" value="${canonicalized.source.path}"/>
-        <echo level="verbose">source.default: ${source.default}</echo>
-        <echo level="verbose">source user input: ${source}</echo>
+        <echo level="verbose" message="source.default: ${source.default}"/>
+        <echo level="verbose" message="source user input: ${source}"/>
 
         <condition property="source.file" value="${source}" else="${source.default}">
             <isset property="source"/>
@@ -577,8 +577,8 @@
         </condition>
         <get src="https://raw.githubusercontent.com/music-encoding/schema/main/${meiversion.latest}/${canonicalized.file.latest}" dest="${old.default}" unless:true="${old.default-available}"/>
 
-        <echo level="verbose">old.default: ${old.default}</echo>
-        <echo level="verbose">old user input: ${old}</echo>
+        <echo level="verbose" message="old.default: ${old.default}"/>
+        <echo level="verbose" message="old user input: ${old}"/>
 
         <condition property="old.file" value="${old}" else="${old.default}">
             <isset property="old"/>
@@ -595,8 +595,8 @@
 
         <!-- set ouput folder -->
         <property name="output.default" value="./utils/compare_versions/"/>
-        <echo level="verbose">output.default: ${output.default}</echo>
-        <echo level="verbose">output user input: ${output}</echo>
+        <echo level="verbose" message="output.default: ${output.default}"/>
+        <echo level="verbose" message="output user input: ${output}"/>
 
         <condition property="output.folder" value="${output}" else="${output.default}">
             <isset property="output"/>
