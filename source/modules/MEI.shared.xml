@@ -6263,7 +6263,7 @@
     <constraintSpec ident="check_keySig_editorial" scheme="schematron">
       <constraint>
         <sch:rule
-          context="mei:keySig/mei:*[local-name() eq 'add' or local-name() eq 'corr'             or local-name() eq 'damage' or local-name() eq 'del' or local-name() eq 'orig' or              local-name() eq 'reg' or local-name() eq 'restore' or local-name() eq 'sic' or              local-name() eq 'supplied' or local-name() eq 'unclear']">
+          context="mei:keySig/mei:*[local-name() eq 'add' or local-name() eq 'corr'             or local-name() eq 'damage' or local-name() eq 'del' or local-name() eq 'orig' or local-name() eq 'reg' or local-name() eq 'restore' or local-name() eq 'sic' or local-name() eq 'supplied' or local-name() eq 'unclear']">
           <sch:assert test="count(mei:keyAccid) = count(mei:*)">Only keyAccid elements are allowed
             here.</sch:assert>
         </sch:rule>
@@ -7105,9 +7105,9 @@
     <constraintSpec ident="phrase_containing_curve" scheme="schematron">
       <constraint>
         <sch:rule
-          context="mei:phrase[mei:curve[@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or              @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2]]">
+          context="mei:phrase[mei:curve[@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2]]">
           <sch:assert
-            test="not(@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or                @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2)"
+            test="not(@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2)"
             role="warning">The visual attributes of the phrase (@bezier, @bulge, @curvedir, @lform,
             @lwidth, @ho, @startho, @endho, @to, @startto, @endto, @vo, @startvo, @endvo, @x, @y,
             @x2, and @y2) will be overridden by visual attributes of the contained curve

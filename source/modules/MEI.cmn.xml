@@ -1281,7 +1281,7 @@
       <constraint>
         <sch:rule context="mei:beam[not(@copyof or @sameas)]">
           <sch:assert
-            test="count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord' or local-name()='space']) &gt; 1"
+            test="count(descendant::*[local-name()='note' or local-name()='rest' or local-name()='chord' or local-name()='space']) &gt; 1"
             >A beam that contains neither a copyof nor sameas attribute must have at least 2 note, rest, chord, or space
             descendants.</sch:assert>
         </sch:rule>
@@ -1615,7 +1615,7 @@
       <constraint>
         <sch:rule context="mei:graceGrp[not(@copyof)]">
           <sch:assert
-            test="count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord' or local-name()='space']) &gt; 0"
+            test="count(descendant::*[local-name()='note' or local-name()='rest' or local-name()='chord' or local-name()='space']) &gt; 0"
             >A graceGrp without a copyof attribute must have at least 1 note, rest, chord, or space
             descendants.</sch:assert>
         </sch:rule>
@@ -1741,7 +1741,7 @@
     <constraintSpec ident="lv_containing_curve" scheme="schematron">
       <constraint>
         <sch:rule
-          context="mei:lv[mei:curve[@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or              @endvo or @x or @y or @x2 or @y2]]">
+          context="mei:lv[mei:curve[@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2]]">
           <sch:assert
             test="not(@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2 or @y2)"
             role="warning">The visual attributes of the lv element (@bezier, @bulge, @curvedir,

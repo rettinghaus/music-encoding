@@ -113,7 +113,7 @@
         <sch:rule
           context="mei:sp[not(ancestor::mei:layer or ancestor::mei:measure or ancestor::mei:staff)]">
           <sch:assert
-            test="not(@startid or @endid or @tstamp or @tstamp2 or @tstamp.ges or @tstamp.real or                @startho or @endho or @to or @startto or @endto or @staff or @layer or @place or @plist)"
+            test="not(@startid or @endid or @tstamp or @tstamp2 or @tstamp.ges or @tstamp.real or @startho or @endho or @to or @startto or @endto or @staff or @layer or @place or @plist)"
             >Must not have any of the attributes: startid, endid, tstamp, tstamp2, tstamp.ges,
             tstamp.real, startho, endho, to, startto, endto, staff, layer, place, or
             plist.</sch:assert>
@@ -165,7 +165,7 @@
         <sch:rule
           context="mei:stageDir[not(ancestor::mei:layer or ancestor::mei:measure or ancestor::mei:staff) or ancestor::mei:sp]">
           <sch:assert
-            test="not(@startid or @endid or @tstamp or @tstamp2 or @tstamp.ges or @tstamp.real or @startho or @endho or @to or                @startto or @endto or @staff or @layer or @place or @plist)"
+            test="not(@startid or @endid or @tstamp or @tstamp2 or @tstamp.ges or @tstamp.real or @startho or @endho or @to or @startto or @endto or @staff or @layer or @place or @plist)"
             >Must not have any of the attributes: startid, endid, tstamp, tstamp2, tstamp.ges,
             tstamp.real, startho, endho, to, startto, endto, staff, layer, place, or
             plist.</sch:assert>
