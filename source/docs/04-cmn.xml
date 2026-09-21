@@ -255,7 +255,7 @@
                   <p>The following example shows how to change the key and meter signatures within a score. The <att>keysig.cancelaccid</att> attribute may be used to control the position of the cancellation accidentals of the key signature change, while the <att>keysig.visible</att> can be used to hide the key signature entirely.</p>
                   <p>
                      <figure>
-                        <head/>
+                         <head>Changing key and meter signatures within a score</head>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/04-score-redefinition.mei" parse="text"/></egXML>
                      </figure>
                   </p>
@@ -1021,7 +1021,7 @@
                      <p>An indication that a passage should be performed one or more octaves above or below its written pitch is represented by the <gi scheme="MEI">octave</gi> element.</p>
                      <p>
                         <figure>
-                           <head/>
+                            <head>Octave shift</head>
                            <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="verovio code" xml:space="preserve"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/verovio/octave-shift-01.mei" parse="text"/></egXML>
                         </figure>
                      </p>
