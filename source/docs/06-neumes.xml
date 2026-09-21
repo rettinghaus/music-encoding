@@ -111,7 +111,7 @@
                      </specList>
                   </p>
                   <p>(syllable) – Individual lyric syllable. <figure>
-                        <head/>
+                        <head>Syllable</head>
                         <graphic url="../images/modules/neumes/syllable.png"/>
                      </figure>
                   </p>
@@ -189,7 +189,7 @@
                </p>
                <p>
                   <hi rend="italic">St Gall notation</hi> Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called <hi rend="italic">salicus</hi> in the literature). <figure>
-                     <head/>
+                     <head>St Gall notation: Oriscus</head>
                      <graphic url="../images/modules/neumes/salicus.png"/>
                   </figure>
                </p>
@@ -201,7 +201,7 @@
                </p>
                <p>
                   <hi rend="italic">Old Hispanic notation</hi>: Two-note downward melodic gesture. <figure>
-                     <head/>
+                     <head>Old Hispanic notation: Two-note downward melodic gesture</head>
                      <graphic url="../images/modules/neumes/NLneumeOH.png"/>
                   </figure>
                </p>
@@ -216,7 +216,7 @@
                </p>
                <p>
                   <hi rend="italic">Old Hispanic notation:</hi> Four-note neutral-low-high-low melodic gesture. <figure>
-                     <head/>
+                     <head>Old Hispanic notation: Four-note neutral-low-high-low melodic gesture</head>
                      <graphic url="../images/modules/neumes/MneumeOH.png"/>
                   </figure>
                </p>
@@ -228,7 +228,7 @@
                </p>
                <p>
                   <hi rend="italic">Aquitanian notation:</hi> Three-note rising neume with oriscus on the second note. <figure>
-                     <head/>
+                     <head>Aquitanian notation: Three-note rising neume with oriscus on the second note</head>
                      <graphic url="../images/modules/neumes/LIQUESCENT-ExampleB.png"/>
                   </figure>
                </p>
@@ -328,24 +328,24 @@
                      <gi scheme="MEI">custos</gi>: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of <gi scheme="MEI">custos</gi> below).</p>
                   <p>
                      <gi scheme="MEI">divLine</gi>: to indicate pause between neumes <figure>
-                        <head/>
+                         <head>divLine</head>
                         <graphic url="../images/modules/neumes/division.png"/>
                      </figure></p>
                   <p>
                      <gi scheme="MEI">episema</gi>: to indicate an episema (see MEI encoding of <gi scheme="MEI">episema</gi> below). <figure>
-                        <head/>
+                         <head>episema</head>
                         <graphic url="../images/modules/neumes/episema.png"/>
                      </figure>
                   </p>
                   <p>
                      <gi scheme="MEI">hispanTick</gi>: to indicate Old Hispanic ticks (see MEI encoding of <gi scheme="MEI">hispanTick</gi> below). <figure>
-                        <head/>
+                         <head>hispanTick</head>
                         <graphic url="../images/modules/neumes/hispanTick.png"/>
                      </figure>
                   </p>
                   <p>
                      <gi scheme="MEI">liquescent</gi>: to indicate a liquescent (see MEI encoding of <gi scheme="MEI">liquescent</gi> neumes below). <figure>
-                        <head/>
+                         <head>liquescent</head>
                         <graphic url="../images/modules/neumes/liquescent2NEW.png"/>
                      </figure>
                   </p>
@@ -395,7 +395,7 @@
                      <gi scheme="MEI">quilisma</gi>: to indicate a quilisma (see MEI encoding of <gi scheme="MEI">quilisma</gi> below).</p>
                   <p>
                      <figure>
-                        <head/>
+                         <head>quilisma</head>
                         <graphic url="../images/modules/neumes/quilisma.png"/>
                      </figure>
                   </p>
@@ -403,7 +403,7 @@
                      <gi scheme="MEI">signifLet</gi>: element indicates significative letter(s) attached to a <gi scheme="MEI">neume</gi> or a <gi scheme="MEI">nc</gi> (see MEI encoding of <gi scheme="MEI">signifLet</gi> below).</p>
                   <p>
                      <figure>
-                        <head/>
+                         <head>signifLet</head>
                         <graphic url="../images/modules/neumes/signifLet.png"/>
                      </figure>
                   </p>
@@ -1070,7 +1070,7 @@
                   <p>The following example illustrates the MEI encoding of the opening of Hildegarde’s <q>O Splendidissima Gemma</q> with the text <q>O splendidissima</q>. This example provides the basic MEI skeleton to have a valid MEI file and it may be used for reference for scholars willing to start encoding early music (and its text) in MEI. Information about the <gi scheme="MEI">staff</gi> has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a <q>C</q> and a <q>F</q> on lines 5 and 3, respectively.</p>
                   <p>
                      <figure>
-                        <head/>
+                         <head>O splendidissima</head>
                         <graphic url="../images/modules/neumes/O-splendidissima.png"/>
                      </figure>
                   </p>
